@@ -1,19 +1,18 @@
-1. setup - shadcn, lucide, eslint, prettier
-2. lay out tabs structure
-3. implement menu tray
-4. lay out home-tab ui structure
-5. implement content folders display, with content peek
-6. implement video list with controls for each video item
-7. implement content descovery, with path persistance
-8. implement watchlist display and controls
-9. implement watchlist creation
-10.   implement recent media list
-11.   lay out watch-tab ui structure
-12.   implement video player
-13.   implement playback control buttons, with mapped keyboard shortcuts (play, pause, return, seek, next, prev, hasten, slowdown )
-14.   implement subtitle selector
-15.   implement audio track selector
-16.   implement synchronization options (delay/hasten subtitles/audio-track)
-17.   layout settings-tab ui
-18.   implement remember watch options
-19.   implement auto check for new content on launch
+1. lay out tabs structure
+2. implement menu tray
+3. lay out home-tab ui structure
+4. implement content folders display, with content peek
+5. implement video list with controls for each video item
+6. implement content descovery, with path persistance
+7. implement watchlist display and controls
+8. implement watchlist creation
+9. implement recent media list
+10.   lay out watch-tab ui structure
+11.   implement video player
+12.   implement playback control buttons, with mapped keyboard shortcuts (play, pause, return, seek, next, prev, hasten, slowdown )
+13.   implement subtitle selector
+14.   implement audio track selector
+15.   implement synchronization options (delay/hasten subtitles/audio-track)
+16.   layout settings-tab ui
+17.   implement remember watch options
+18.   implement auto check for new content on launch
