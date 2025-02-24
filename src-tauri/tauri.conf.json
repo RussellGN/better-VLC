@@ -10,12 +10,15 @@
     "frontendDist": "../dist"
   },
   "app": {
+
     "windows": [
-      {
-        "title": "better-vlc",
+      {        
+        "title": "Better VLC",
         "width": 800,
         "height": 600,
-        "center": true
+        "maximized": true,
+        "backgroundColor": "#000a00",
+        "center": true        
       }
     ],
     "security": {
