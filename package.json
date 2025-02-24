@@ -8,6 +8,7 @@
       "build": "tsc && vite build",
       "preview": "vite preview",
       "tauri": "tauri",
+      "td": "tauri dev",
       "p-format": "prettier . --write",
       "p-check": "prettier . --check"
    },
