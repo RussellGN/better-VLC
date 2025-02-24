@@ -1,7 +1,13 @@
+import { Routes, Route } from "react-router";
+import { BrowserRouter } from "react-router";
+import Home from "./routes/Home";
+
 export default function App() {
    return (
-      <div>
-         <h1>Better VLC</h1>
-      </div>
+      <BrowserRouter>
+         <Routes>
+            <Route index element={<Home />} />
+         </Routes>
+      </BrowserRouter>
    );
 }
