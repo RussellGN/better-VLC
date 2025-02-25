@@ -63,7 +63,7 @@
       @apply border-border outline-ring/50;
    }
    body {
-      @apply bg-dark text-[whitesmoke];
+      @apply bg-dark-default text-[whitesmoke];
    }
 }
 
@@ -74,4 +74,18 @@
 ._navlink.active,
 ._navlink.active:hover {
    @apply bg-white/20;
+}
+
+::-webkit-scrollbar {
+   @apply size-[10px];
+}
+::-webkit-scrollbar-track {
+   @apply bg-dark-dark;
+}
+::-webkit-scrollbar-thumb {
+   @apply bg-primary-dark rounded-[10px] border-2 border-dark-dark;
+}
+
+._v-thumbnail:hover ._v-thumbnail-screen {
+   @apply to-secondary-default/20;
 }
