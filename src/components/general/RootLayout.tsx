@@ -1,18 +1,31 @@
-import { Link, Outlet } from "react-router";
+import { Home, Settings, Tv2 } from "lucide-react";
+import { NavLink, Outlet } from "react-router";
+import { Button } from "../ui/button";
 
 export default function RootLayout() {
    return (
-      <div>
-         <nav className="flex items-center gap-3">
-            <Link className="text-secondary-default" to="/">
-               home
-            </Link>
-            <Link className="text-secondary-default" to="/watch/c:path/to/random/file">
-               watch
-            </Link>
-            <Link className="text-secondary-default" to="/settings">
-               settings
-            </Link>
+      <div className="p-2">
+         <nav className="border-b border-[#393939] pb-2 mb-2 flex capitalize items-center gap-2">
+            <Button size="sm" asChild>
+               <NavLink className="_navlink" to="/">
+                  home
+                  <Home />
+               </NavLink>
+            </Button>
+
+            <Button size="sm" asChild>
+               <NavLink className="_navlink" to="/watch/c:path/to/random/file">
+                  watch
+                  <Tv2 />
+               </NavLink>
+            </Button>
+
+            <Button size="sm" asChild>
+               <NavLink className="_navlink" to="/settings">
+                  settings
+                  <Settings />
+               </NavLink>
+            </Button>
          </nav>
          <Outlet />
       </div>

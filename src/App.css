@@ -66,3 +66,12 @@
       @apply bg-dark text-[whitesmoke];
    }
 }
+
+.lucide {
+   @apply size-5;
+}
+
+._navlink.active,
+._navlink.active:hover {
+   @apply bg-white/20;
+}
