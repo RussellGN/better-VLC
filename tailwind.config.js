@@ -21,7 +21,11 @@ export default {
                DEFAULT: "hsl(var(--secondary))",
                foreground: "hsl(var(--secondary-foreground))",
             },
-            dark: "#000a00",
+            dark: {
+               light: "rgb(20,20,20)",
+               default: "rgb(10,10,10)",
+               dark: "rgb(0,0,0)",
+            },
             background: "hsl(var(--background))",
             foreground: "hsl(var(--foreground))",
             card: {
