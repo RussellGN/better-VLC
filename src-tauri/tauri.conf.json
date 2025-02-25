@@ -18,7 +18,8 @@
         "height": 600,
         "maximized": true,
         "backgroundColor": "#000a00",
-        "center": true        
+        "center": true  ,      
+        "devtools": true
       }
     ],
     "security": {

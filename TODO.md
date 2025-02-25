@@ -1,18 +1,17 @@
-1. lay out tabs structure
-2. implement menu tray
-3. lay out home-tab ui structure
-4. implement content folders display, with content peek
-5. implement video list with controls for each video item
-6. implement content descovery, with path persistance
-7. implement watchlist display and controls
-8. implement watchlist creation
-9. implement recent media list
-10.   lay out watch-tab ui structure
-11.   implement video player
-12.   implement playback control buttons, with mapped keyboard shortcuts (play, pause, return, seek, next, prev, hasten, slowdown )
-13.   implement subtitle selector
-14.   implement audio track selector
-15.   implement synchronization options (delay/hasten subtitles/audio-track)
-16.   layout settings-tab ui
-17.   implement remember watch options
-18.   implement auto check for new content on launch
+1. implement menu tray
+2. lay out home-tab ui structure
+3. implement content folders display, with content peek
+4. implement video list with controls for each video item
+5. implement content descovery, with path persistance
+6. implement watchlist display and controls
+7. implement watchlist creation
+8. implement recent media list
+9. lay out watch-tab ui structure
+10.   implement video player
+11.   implement playback control buttons, with mapped keyboard shortcuts (play, pause, return, seek, next, prev, hasten, slowdown )
+12.   implement subtitle selector
+13.   implement audio track selector
+14.   implement synchronization options (delay/hasten subtitles/audio-track)
+15.   layout settings-tab ui
+16.   implement remember watch options
+17.   implement auto check for new content on launch
