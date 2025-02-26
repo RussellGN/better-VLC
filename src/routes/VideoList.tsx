@@ -23,6 +23,9 @@ export default function VideoList({ title, icon, videos, contentClassName, error
             {error ? (
                <>
                   <TriangleAlert /> {error}
+                  <Button onClick={refresh} variant="primary" size="icon">
+                     <RefreshCcw />
+                  </Button>
                </>
             ) : isLoading ? (
                <>

@@ -21,8 +21,8 @@ export default function useVideos() {
       mutationFn: () => invoke(BACKEND_COMMANDS.refreshVideos),
    });
 
-   const e1 = getError ? " Error getting videos: " + getError : "";
-   const e2 = refreshError ? " Error getting videos: " + refreshError : "";
+   const e1 = getError ? "| Error getting videos: " + getError + " |" : "";
+   const e2 = refreshError ? "| Error getting videos: " + refreshError + " |" : "";
 
    // console.log({ videos, getError, refreshError, isLoading, isPending, refresh });
 
