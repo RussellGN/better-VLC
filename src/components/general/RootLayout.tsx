@@ -1,4 +1,4 @@
-import { Home, Tv2 } from "lucide-react";
+import { Home } from "lucide-react";
 import { NavLink, Outlet } from "react-router";
 import { Button } from "../ui/button";
 
@@ -10,13 +10,6 @@ export default function RootLayout() {
                <NavLink className="_navlink" to="/">
                   home
                   <Home />
-               </NavLink>
-            </Button>
-
-            <Button size="sm" asChild>
-               <NavLink className="_navlink" to="/watch/c:path/to/random/file">
-                  watch
-                  <Tv2 />
                </NavLink>
             </Button>
          </nav>
