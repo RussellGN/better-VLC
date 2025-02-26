@@ -1,6 +1,6 @@
 import { Video } from "./types";
 
-export const videos: Video[] = [
+export const sampleVideos: Video[] = [
    {
       id: "1109-324",
       src: "/path/to/random/file1.mp4",
