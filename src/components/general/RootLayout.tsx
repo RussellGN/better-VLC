@@ -1,6 +1,7 @@
 import { Home } from "lucide-react";
 import { NavLink, Outlet } from "react-router";
 import { Button } from "../ui/button";
+import { Toaster } from "../ui/sonner";
 
 export default function RootLayout() {
    return (
@@ -15,6 +16,7 @@ export default function RootLayout() {
          </nav>
 
          <Outlet />
+         <Toaster />
       </div>
    );
 }
