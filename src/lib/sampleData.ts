@@ -1,4 +1,4 @@
-import { Folder, Video } from "./types";
+import { Video } from "./types";
 
 export const videos: Video[] = [
    {
@@ -181,42 +181,4 @@ export const videos: Video[] = [
       title: "Deadpool",
       thumbnail: "/placeholderImage.png",
    },
-];
-
-export const folders: Folder[] = [
-   { id: "1", title: "Breaking Bad", src: "./Breaking_Bad" },
-   { id: "2", title: "Game of Thrones", src: "./Game_of_Thrones" },
-   { id: "3", title: "Stranger Things", src: "./Stranger_Things" },
-   { id: "4", title: "The Office", src: "./The_Office" },
-   { id: "5", title: "Sherlock", src: "./Sherlock" },
-   { id: "6", title: "Westworld", src: "./Westworld" },
-   { id: "7", title: "Friends", src: "./Friends" },
-   { id: "8", title: "Better Call Saul", src: "./Better_Call_Saul" },
-   { id: "9", title: "The Witcher", src: "./The_Witcher" },
-   { id: "10", title: "House of the Dragon", src: "./House_of_the_Dragon" },
-   { id: "11", title: "The Mandalorian", src: "./The_Mandalorian" },
-   { id: "12", title: "Loki", src: "./Loki" },
-   { id: "13", title: "The Boys", src: "./The_Boys" },
-   { id: "14", title: "Squid Game", src: "./Squid_Game" },
-   { id: "15", title: "Black Mirror", src: "./Black_Mirror" },
-   { id: "16", title: "Money Heist", src: "./Money_Heist" },
-   { id: "17", title: "Peaky Blinders", src: "./Peaky_Blinders" },
-   { id: "18", title: "Dark", src: "./Dark" },
-   { id: "19", title: "Mindhunter", src: "./Mindhunter" },
-   { id: "20", title: "Narcos", src: "./Narcos" },
-   { id: "21", title: "The Crown", src: "./The_Crown" },
-   { id: "22", title: "True Detective", src: "./True_Detective" },
-   { id: "23", title: "Dexter", src: "./Dexter" },
-   { id: "24", title: "Rick and Morty", src: "./Rick_and_Morty" },
-   { id: "25", title: "The Simpsons", src: "./The_Simpsons" },
-   { id: "26", title: "Arcane", src: "./Arcane" },
-   { id: "27", title: "Mr. Robot", src: "./Mr_Robot" },
-   { id: "28", title: "Suits", src: "./Suits" },
-   { id: "29", title: "Prison Break", src: "./Prison_Break" },
-   { id: "30", title: "The Walking Dead", src: "./The_Walking_Dead" },
-   { id: "31", title: "Chernobyl", src: "./Chernobyl" },
-   { id: "32", title: "How I Met Your Mother", src: "./How_I_Met_Your_Mother" },
-   { id: "33", title: "Brooklyn Nine-Nine", src: "./Brooklyn_Nine_Nine" },
-   { id: "34", title: "Fargo", src: "./Fargo" },
-   { id: "35", title: "Lost", src: "./Lost" },
 ];

@@ -1,8 +1,6 @@
 # better-VLC
 
-- alternative to VLC media player
-- uses Tauri (Rust) and react (TS)
-- more intuitive UI and functionality
+- media player
 
 ## 1.0 features
 
@@ -12,19 +10,9 @@
 
 2. home tab
 
-- recent media
-- folders (with content peek)
-- watchlists (video)
-- content descovery
+- all discovered media
 
 3. watch tab
 
-- subtitle selector
-- audio track selector
-- synchronization options
-- playback control buttons, with mapped keyboard shortcuts (play, pause, return, seek, next, prev )
-
-4. settings tab
-
-- remember watch options
-- auto content descovery on launch
+- video-player
+- playback controls (play, pause, return, seek )

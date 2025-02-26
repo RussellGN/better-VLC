@@ -4,9 +4,3 @@ export type Video = {
    src: string;
    thumbnail: string;
 };
-
-export type Folder = {
-   id: string;
-   title: string;
-   src: string;
-};

@@ -1,7 +1,6 @@
-import { FolderOpen, Home, Settings, Tv2 } from "lucide-react";
+import { Home, Tv2 } from "lucide-react";
 import { NavLink, Outlet } from "react-router";
 import { Button } from "../ui/button";
-import DiscoverBtn from "./DiscoverBtn";
 
 export default function RootLayout() {
    return (
@@ -20,25 +19,8 @@ export default function RootLayout() {
                   <Tv2 />
                </NavLink>
             </Button>
-
-            <Button size="sm" asChild>
-               <NavLink className="_navlink" to="/folder/c:path/to/random/file">
-                  folder
-                  <FolderOpen />
-               </NavLink>
-            </Button>
-
-            <Button size="sm" asChild>
-               <NavLink className="_navlink" to="/settings">
-                  settings
-                  <Settings />
-               </NavLink>
-            </Button>
-
-            <div className="ml-auto mt-3 mr-3">
-               <DiscoverBtn />
-            </div>
          </nav>
+
          <Outlet />
       </div>
    );
