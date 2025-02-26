@@ -19,7 +19,8 @@
         "maximized": true,
         "backgroundColor": "#000a00",
         "center": true  ,      
-        "devtools": true
+        "devtools": true,
+        "alwaysOnBottom": true
       }
     ],
     "security": {
