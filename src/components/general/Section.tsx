@@ -7,7 +7,7 @@ type propTypes = {
    contentClassName?: string;
    icon: LucideIcon;
    children: ReactNode;
-   actions: ReactNode;
+   actions?: ReactNode;
 };
 
 export default function Section({ title, contentClassName, icon: Icon, children, actions }: propTypes) {
