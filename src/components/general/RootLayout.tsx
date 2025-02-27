@@ -2,8 +2,11 @@ import { Home } from "lucide-react";
 import { NavLink, Outlet } from "react-router";
 import { Button } from "../ui/button";
 import { Toaster } from "../ui/sonner";
+import useEventListener from "@/hooks/useEventListener";
 
 export default function RootLayout() {
+   useEventListener();
+
    return (
       <div className="p-2">
          <nav className="border-b-2 border-dark-light pb-2 flex capitalize items-center gap-2">
