@@ -1,4 +1,2 @@
-1. implement video list
-2. layout watch tab
-3. implement videoplayer
-4. implement playback controls
+1. implement videoplayer
+2. implement playback controls
