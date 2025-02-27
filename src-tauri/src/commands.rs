@@ -3,7 +3,7 @@ use std::{ffi::OsStr, path::Path};
 use crate::{
     constants::STORE_NAME,
     structs::Video,
-    utils::{log, walk_dir_and},
+    utils::{get_home_dir, log, walk_dir_and},
 };
 use serde_json::json;
 use tauri::{AppHandle, Emitter, Runtime};
@@ -18,7 +18,7 @@ pub fn load_and_save_new_media<R: Runtime>(app: AppHandle<R>) -> crate::Result<V
     let mut emitted_media_count = 0;
 
     log(format!("[load_and_save_new_media] starting dir walk").as_str());
-    walk_dir_and(Path::new("/"), &mut |entry| {
+    walk_dir_and(&get_home_dir(), &mut |entry| {
         let path = entry.path();
         if let Some(valid_utf8_ext) = path.extension().unwrap_or(OsStr::new("")).to_str() {
             if valid_utf8_ext.to_lowercase() == "mp4" || valid_utf8_ext.to_lowercase() == "mpeg4" {
