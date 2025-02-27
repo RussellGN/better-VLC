@@ -24,7 +24,7 @@ impl Video {
             .to_string();
 
         Ok(Self {
-            id: name.clone(),
+            id: path.to_string_lossy().to_string(),
             title: name.clone(),
             src: path.to_path_buf(),
             thumbnail: None,

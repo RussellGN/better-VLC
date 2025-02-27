@@ -55,7 +55,7 @@ export default function VideoList({ title, icon, videos, contentClassName, error
                      contentClassName,
                   )}
                >
-                  {videos?.map((vid) => <VideoThumbnail video={vid} key={vid.id} />)}
+                  {videos?.map((vid, index) => <VideoThumbnail video={vid} key={vid.id + "-" + index} />)}
                </div>
             )}
          </div>
