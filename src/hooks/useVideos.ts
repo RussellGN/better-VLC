@@ -1,10 +1,14 @@
+import { useReactQueryClient } from "@/components/providers/ReactQueryProvider";
 import { BACKEND_COMMANDS, VIDEOS_KEY } from "@/lib/constants";
 import { Video } from "@/lib/types";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { invoke } from "@tauri-apps/api/core";
 import { useEffect } from "react";
+import { toast } from "sonner";
 
 export default function useVideos() {
+   const client = useReactQueryClient();
+
    const {
       data: videos,
       error: getError,
@@ -20,8 +24,15 @@ export default function useVideos() {
       mutate: refresh,
       error: refreshError,
       isPending,
-   } = useMutation<unknown, string>({
-      mutationFn: () => invoke(BACKEND_COMMANDS.loadAndSaveNewMedia),
+   } = useMutation<Video[], string>({
+      mutationFn: () => invoke<Video[]>(BACKEND_COMMANDS.loadAndSaveNewMedia),
+      onSuccess(data) {
+         client.setQueryData(VIDEOS_KEY, data);
+      },
+      onError(e) {
+         console.log(e);
+         toast.error(e);
+      },
    });
 
    useEffect(() => {
