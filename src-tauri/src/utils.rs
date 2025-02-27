@@ -1,3 +1,4 @@
+use colored::Colorize;
 use std::{
     fs::{self, DirEntry},
     path::Path,
@@ -18,4 +19,8 @@ where
     }
 
     Ok(())
+}
+
+pub fn log(s: &str) {
+    println!("{}", s.purple())
 }
