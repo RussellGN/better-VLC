@@ -1,4 +1,4 @@
-export const VIDEOS_KEY = ["videos"];
+export const QUERY_KEYS = { videosKey: ["videos"] };
 
 export const BACKEND_COMMANDS = {
    loadAndSaveNewMedia: "load_and_save_new_media",

@@ -1,5 +1,5 @@
 import { useReactQueryClient } from "@/components/providers/ReactQueryProvider";
-import { BACKEND_COMMANDS, VIDEOS_KEY } from "@/lib/constants";
+import { BACKEND_COMMANDS, QUERY_KEYS } from "@/lib/constants";
 import { Video } from "@/lib/types";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { invoke } from "@tauri-apps/api/core";
@@ -16,7 +16,7 @@ export default function useVideos() {
       refetch: fetchVideos,
    } = useQuery<Video[], string>({
       enabled: false,
-      queryKey: VIDEOS_KEY,
+      queryKey: QUERY_KEYS.videosKey,
       queryFn: () => invoke<Video[]>(BACKEND_COMMANDS.getVideos),
    });
 
@@ -27,7 +27,7 @@ export default function useVideos() {
    } = useMutation<Video[], string>({
       mutationFn: () => invoke<Video[]>(BACKEND_COMMANDS.loadAndSaveNewMedia),
       onSuccess(data) {
-         client.setQueryData(VIDEOS_KEY, data);
+         client.setQueryData(QUERY_KEYS.videosKey, data);
       },
       onError(e) {
          console.log(e);
