@@ -68,7 +68,7 @@
 }
 
 body {
-   @apply bg-dark-default text-[whitesmoke] overflow-hidden;
+   @apply bg-dark-light text-[whitesmoke] overflow-hidden;
 }
 
 .lucide {
@@ -87,7 +87,7 @@ body {
    @apply bg-dark-dark;
 }
 ::-webkit-scrollbar-thumb {
-   @apply bg-primary-dark rounded-[10px] border-2 border-dark-dark;
+   @apply bg-secondary-default rounded-[10px] border-2 border-dark-dark;
 }
 
 ._v-thumbnail:hover ._v-thumbnail-screen {

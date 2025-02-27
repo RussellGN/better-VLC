@@ -13,7 +13,7 @@ export default function VideoThumbnail({ video }: propTypes) {
          <img
             src={video.thumbnail || PLACEHOLDER_IMAGE}
             alt={video.title}
-            className="block w-full shadow aspect-video bg-dark-light border  rounded-md"
+            className="block w-full shadow aspect-video bg-dark-default border  rounded-md"
          />
          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[rgba(0,0,0,0.8)] to-transparent transition-all _v-thumbnail-screen" />
          <div className="py-1 px-2 flex items-center justify-between gap-4 absolute bottom-0 left-0 w-full ">
