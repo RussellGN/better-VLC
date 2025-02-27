@@ -12,8 +12,10 @@ where
         let entry = entry.map_err(|e| e.to_string())?;
         let path = entry.path();
         if path.is_dir() {
+            log(format!("[walk_dir_and] recursing in {path:?}").as_str());
             walk_dir_and(&path, callback)?;
         } else {
+            log(format!("[walk_dir_and] calling callback on {path:?}").as_str());
             callback(entry)?;
         }
     }
