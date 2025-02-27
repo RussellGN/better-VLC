@@ -18,7 +18,7 @@ export default function useVideos() {
       error: refreshError,
       isPending,
    } = useMutation<unknown, string>({
-      mutationFn: () => invoke(BACKEND_COMMANDS.refreshVideos),
+      mutationFn: () => invoke(BACKEND_COMMANDS.loadAndSaveNewMedia),
    });
 
    const e1 = getError ? "| Error getting videos: " + getError + " |" : "";
