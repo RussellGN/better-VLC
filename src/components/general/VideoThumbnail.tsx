@@ -1,6 +1,7 @@
 import { Video } from "@/lib/types";
 import { Link } from "react-router";
 import { Play } from "lucide-react";
+import { PLACEHOLDER_IMAGE } from "@/lib/constants";
 
 type propTypes = {
    video: Video;
@@ -10,7 +11,7 @@ export default function VideoThumbnail({ video }: propTypes) {
    return (
       <Link title={video.title} to={`/watch/${video.src}`} className="block min-w-[6rem] w-[13%] relative _v-thumbnail">
          <img
-            src={video.thumbnail}
+            src={video.thumbnail || PLACEHOLDER_IMAGE}
             alt={video.title}
             className="block w-full shadow aspect-video bg-dark-light border  rounded-md"
          />
