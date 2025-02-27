@@ -18,7 +18,17 @@ type propTypes = {
 
 export default function VideoList({ title, icon, videos, contentClassName, error, isLoading, refresh }: propTypes) {
    return (
-      <Section icon={icon} title={title}>
+      <Section
+         icon={icon}
+         title={title}
+         actions={
+            <div>
+               <Button onClick={refresh} variant="primary" size="icon">
+                  <RefreshCcw />
+               </Button>
+            </div>
+         }
+      >
          <div className="flex flex-col items-center justify-center text-center gap-3">
             {error ? (
                <>
@@ -39,7 +49,12 @@ export default function VideoList({ title, icon, videos, contentClassName, error
                   </Button>
                </>
             ) : (
-               <div className={cn("w-full text-left flex items-center flex-wrap gap-5", contentClassName)}>
+               <div
+                  className={cn(
+                     "w-full text-left flex justify-around items-center pe-2 flex-wrap gap-5",
+                     contentClassName,
+                  )}
+               >
                   {videos?.map((vid) => <VideoThumbnail video={vid} key={vid.id} />)}
                </div>
             )}

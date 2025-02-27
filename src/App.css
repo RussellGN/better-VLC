@@ -68,7 +68,7 @@
 }
 
 body {
-   @apply bg-dark-default text-[whitesmoke];
+   @apply bg-dark-default text-[whitesmoke] overflow-hidden;
 }
 
 .lucide {
